@@ -34,7 +34,7 @@ using std::binary_function;
 using std::map;
 
 
-#ifdef BOOST_OS_WINDOWS
+#if BOOST_OS_WINDOWS
 #include <Windows.h>
 #elif BOOST_OS_LINUX
 
@@ -212,7 +212,7 @@ string getExecutablePath(){
 
 	string path = "./";
 	
-#ifdef BOOST_OS_WINDOWS
+#if BOOST_OS_WINDOWS
 	char  buffer[MAX_PATH]; 
 	GetModuleFileName( NULL, buffer, MAX_PATH );
 
