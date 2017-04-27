@@ -37,7 +37,7 @@ using std::map;
 #if BOOST_OS_WINDOWS
 #include <Windows.h>
 #elif BOOST_OS_LINUX
-
+#include <linux/limits.h>
 #elif BOOST_OS_MACOS
 
 #elif BOOST_OS_BSD
